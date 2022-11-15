@@ -1,0 +1,127 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 239, 239);
+}
+.swiper{
+    width: 950px;
+}
+section{
+    position: relative;
+    height: 450px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    background: rgb(76, 151, 233);
+
+}
+section .card .image {
+    width: 140px;
+    height: 140px;
+    border-radius:50%;
+    padding: 3px;
+    background-color: $teal-500;
+
+}
+section .card .image img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    object-fit: cover;
+    border: 3px solid rgb(255, 255, 255);
+}
+.card{
+    background-color: #fff;
+    border-radius: 20px;
+    // padding: 3px;
+    position: relative;
+    margin: 25px 0;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: $teal-500;
+}
+.card .card-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.card .media-icons{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.card .media-icons i{
+    padding-bottom: 5px;
+    color: #fff;
+    opacity: 0.7;
+    margin: 1px;
+}
+.card .media-icons i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.card .id-cate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.id-cate .id{
+    font-size: 20px;
+    font-weight: 600px;
+}
+.id-cate .cate{
+    font-size: 15px;
+    font-weight: 400px;
+}
+.card .rating{
+    font-size: 15px;
+    color: $teal-500;
+}
+.card .buttom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+}
+.btn{
+    border-radius: 20px;
+    color: $teal-500;
+    border-color: $teal-500;
+    
+}
+.btn:hover{
+    
+    background-color: $teal-500;
+}
+.swiper-pagination{
+    position: relative;
+}
+.swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: $teal-500;
+}
